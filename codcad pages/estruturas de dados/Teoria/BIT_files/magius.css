@@ -1,0 +1,464 @@
+/* ThiNepo */
+form textarea#comment_text {
+     width: 100%;
+     max-width: 100%;
+}
+
+form textarea#message {
+     width: 80%;
+     max-width: 100%;
+}
+
+.feedback_type{
+  width: 30%;
+    max-width: 30%; 
+}
+
+form textarea {
+  box-shadow:none;
+  border-radius:4px;
+  padding:8px 10px;
+  height:auto;
+  font-size:14px;
+  line-height:normal;
+}
+form textarea:focus {
+  box-shadow:none;
+  outline:none;
+  border:1px solid #13a2dc;
+}
+
+.centered{
+  text-align: center !important;
+}
+
+.transparent-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.text-correct{
+  color: #01B504;
+}
+
+.text-wrong{
+  color: #FF3330;
+}
+
+.text-soft-wrong{
+  color: #FF1194;
+}
+
+.text-warning{
+  color: #E2AB12;
+}
+
+.no-border td {
+  border-top: none !important;
+}
+
+table td {
+  font-size:16px;
+  /*border-top: none !important;*/
+}
+
+p {
+  font-size:16px;
+  text-align:justify;
+}
+
+.img-margin-2 img{
+  margin: 2em;
+}
+
+
+/* Define how each icon button should look like */
+.notification-container {
+  color: white;
+  display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative; /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px; /* Add some padding so it looks nice */
+}
+
+/* Make the badge float in the top right corner of the button */
+.notification-badge {
+
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 0;
+  right: 0;
+
+  font: 10px Verdana;  
+
+  background-color: #ED0885;
+  color: #fff;
+  border-radius: 2px;
+  color: white;
+ 
+  padding: 1px 3px;
+  font-size: 10px;
+}
+
+.details-so-far-competitions {
+  width:calc(100% + 30px);
+  height:auto;
+  margin-left:-15px;
+  background:#13a2dc;
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+  padding:15px;
+  color:#fff;
+}
+
+.user-container{
+	width: 100%;
+}
+
+/*Table Problems*/
+.problems-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.problems-table td, .problems-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.problems-table .row-ID {
+  width: 10%;
+}
+.problems-table .row-name {
+  width: 40%;
+}
+.problems-table .row-score {
+  width: 20%;
+}
+.problems-table .row-lesson {
+  width: 30%;
+}
+/*Table Submissions*/
+.submissions-table {
+  margin-top:20px;
+}
+.submissions-table thead th {
+  padding:10px !important;
+  font-size:16px;
+}
+.submissions-table tbody tr td {
+  padding:10px;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#999;
+}
+.submissions-table tbody tr.done td {
+  color:#999;
+  background:rgba(250,250,250,1);
+}
+.submissions-table tbody tr.current td {
+  font-weight:bold;
+  font-size:14px;
+  color:#fff;
+  background:#43beef;
+  font-family:'PT Sans', sans-serif;
+}
+
+.submissions-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.submissions-table td, .submissions-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.submissions-table .row-ID {
+  width: 10%;
+}
+.submissions-table .row-name {
+  width: 40%;
+}
+.submissions-table .row-status {
+  width: 20%;
+}
+.submissions-table .row-score {
+  width: 15%;
+}
+.submissions-table .row-date {
+  width: 25%;
+}
+
+/*Table Submissions-All*/
+.submissions-live-table {
+  margin-top:20px;
+}
+.submissions-live-table thead th {
+  padding:10px !important;
+  font-size:16px;
+}
+.submissions-live-table tbody tr td {
+  padding:10px;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#999;
+}
+.submissions-live-table tbody tr.done td {
+  color:#999;
+  background:rgba(250,250,250,1);
+}
+.submissions-live-table tbody tr.current td {
+  font-weight:bold;
+  font-size:14px;
+  color:#fff;
+  background:#43beef;
+  font-family:'PT Sans', sans-serif;
+}
+
+.submissions-live-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.submissions-live-table td, .submissions-live-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.submissions-live-table .row-ID {
+  width: 10%;
+}
+.submissions-live-table .row-user-name {
+  width: 20%;
+}
+.submissions-live-table .row-problem-name {
+  width: 20%;
+}
+.submissions-live-table .row-status {
+  width: 15%;
+}
+.submissions-live-table .row-score {
+  width: 15%;
+}
+.submissions-live-table .row-date {
+  width: 20%;
+}
+
+/*Table Ranking*/
+.ranking-table {
+  margin-top:20px;
+}
+.ranking-table thead th {
+  padding:10px !important;
+  font-size:16px;
+}
+.ranking-table tbody tr td {
+  padding:10px;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#999;
+}
+.ranking-table tbody tr.done td {
+  color:#999;
+  background:rgba(250,250,250,1);
+}
+.ranking-table tbody tr.current td {
+  font-weight:bold;
+  font-size:14px;
+  color:#fff;
+  background:#43beef;
+  font-family:'PT Sans', sans-serif;
+}
+
+.ranking-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.ranking-table td, .ranking-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.ranking-table .row-rank {
+  width: 10%;
+}
+.ranking-table .row-user-name {
+  width: 30%;
+}
+.ranking-table .row-institution {
+  width: 40%;
+}
+.ranking-table .row-score {
+  width: 20%;
+}
+
+/*Table Institutions Ranking*/
+.ranking-institutions-table {
+  margin-top:20px;
+}
+.ranking-institutions-table thead th {
+  padding:10px !important;
+  font-size:16px;
+}
+.ranking-institutions-table tbody tr td {
+  padding:10px;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#999;
+}
+.ranking-institutions-table tbody tr.done td {
+  color:#999;
+  background:rgba(250,250,250,1);
+}
+.ranking-institutions-table tbody tr.current td {
+  font-weight:bold;
+  font-size:14px;
+  color:#fff;
+  background:#43beef;
+  font-family:'PT Sans', sans-serif;
+}
+
+.ranking-institutions-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.ranking-institutions-table td, .ranking-institutions-table th{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.ranking-institutions-table .row-rank {
+  width: 10%;
+}
+.ranking-institutions-table .row-institution {
+  width: 70%;
+}
+.ranking-institutions-table .row-score {
+  width: 20%;
+}
+
+.wrap-pre{
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+}
+
+.default-color{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.default-color-link { 
+	color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+} 
+
+body .modal-dialog-big {
+    /* new custom width */
+    width: 60%;
+}
+
+.problem-progress-font{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.pink-button{
+  background:#D8087B;
+  font-size:16px;
+  padding:10px 35px;
+  margin-top:15px;
+  border-radius:30px;
+}
+
+/*FFB*/
+
+.ffb-font{
+	font-size:20px;
+}
+
+.width-max{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+li{
+	font-size:16px;
+	font-weight:400;
+}
+
+.profile-scores{
+  margin-right: 10px;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.modal-body .avatar {
+  border:2px solid #fff;
+  border-radius:50%;
+  margin-right:5px;
+}
+
+.avatar-circle {
+  border:2px solid #fff;
+  border-radius:50%;
+  margin-right:5px;
+}
+
+.no-wrap {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.no-wrap li{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Example of how center a anything
+.centered-thing {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.map{
+    height: 500px;
+    width: 80%;
+}

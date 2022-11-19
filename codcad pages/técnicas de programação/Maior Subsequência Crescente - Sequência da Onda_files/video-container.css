@@ -1,0 +1,34 @@
+/* ThiNepo */
+
+.video-container {
+overflow: hidden;
+position: relative;
+left: 10%; 
+width:80%;
+}
+
+.video-container::after {
+padding-top: 56.25%;
+/* 16:9 ratio */
+display: block;
+content: '';
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+height: 80%;
+}
+
+/* Example of how center a anything
+.centered-thing {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
